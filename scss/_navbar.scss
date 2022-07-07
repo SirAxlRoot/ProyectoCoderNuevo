@@ -6,6 +6,12 @@ body {
 
 .carousel-inner {
     max-height: 36rem;
+    @media screen and (max-width: 375px) {
+      max-height: 10rem;
+    @media (max-width: 768px) {
+      max-height: 32rem;
+    }
+    }
   }
 
   @media (max-width: 576px) {
