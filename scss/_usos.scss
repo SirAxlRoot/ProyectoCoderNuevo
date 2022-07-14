@@ -39,10 +39,8 @@
         font-weight: 800;
         font-style: italic;
         font-size: 4em;
-        color: #2b7a30;
-        display: flex;
-        align-items: center;
-        text-align: center;
+        color: map-get($map: $pallette, $key: secondary);
+        @include textocenter;
 
     }
   }
@@ -51,11 +49,9 @@
     display: flex;
     justify-content: center;
     p {
+        @include textocenter;
         margin: 40px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #0c240e;
+        color: map-get($map: $pallette, $key: danger);
         font-size: 1.3em;
         font-style: italic;
     }
@@ -68,11 +64,9 @@
         font-family: "Raleway", sans-serif;
         font-size: 3em;
         font-style: italic;
-        color: #469c4b;
+        color: map-get($map: $pallette, $key: secondary);
         text-decoration: underline;
-        display: flex;
-        align-items: center;
-        text-align: center;
+        @include textocenter;
     }
   }
 

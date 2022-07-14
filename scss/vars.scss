@@ -11,3 +11,40 @@ $textSm: 0.8em;
 $textMd: 1em;
 $textLg: 1.6em;
 $textXl: 3em;
+
+
+//pallette
+
+$pallette:(
+    'primary': #223310,
+    'secondary': #548029,
+    'success': #7EBF3D,
+    'danger': #213210,
+    'dark': #031702,
+    'green': #2A4014,
+    'white': #c9d6cb,
+);
+
+//VARIABLES PARA EXTEND
+$color-fondoextend: #2A4014;
+$color-letraextend: #c9d6cb;
+
+
+//MIXINS
+
+@mixin textocenter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+@mixin bordess {
+    border-radius: 10px;
+}
+
+@mixin sombrass {
+    box-shadow: 0 1px 2px #031702;
+}
+
