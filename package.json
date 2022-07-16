@@ -1,7 +1,7 @@
 {
-  "name": "proyecto-final-nuevo",
+  "name": "ProyectoAxlViglione-CoderHouse",
   "version": "1.0.0",
-  "description": "Proyecto final",
+  "description": "Cactiando, una página donde podes aprender y aportar sobre la familia mas hermosas de plantas, las cactáceas ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/SirAxlRoot/ProyectoCoderNuevo.git"
   },
-  "author": "",
+  "author": "Axl-Viglione",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SirAxlRoot/ProyectoCoderNuevo/issues"

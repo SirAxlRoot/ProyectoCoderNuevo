@@ -30,6 +30,12 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 250px;
   grid-gap: 20px; }
+  .container-img .box-img:nth-child(1) {
+    grid-column-start: span 2; }
+  .container-img .box-img:nth-child(4) {
+    grid-row-start: span 2; }
+  .container-img .box-img:nth-child(15) {
+    grid-column-start: span 2; }
   .container-img .box-img figure {
     width: 100%;
     height: 100%; }
@@ -37,41 +43,27 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-
-.container-img .box-img:nth-child(1) {
-  grid-column-start: span 2; }
-
-.container-img .box-img:nth-child(4) {
-  grid-row-start: span 2; }
-
-.container-img .box-img:nth-child(15) {
-  grid-column-start: span 2; }
-
-@media (max-width: 768px) {
-  #intro {
-    width: 90% !important; }
-  .servicio-fila {
-    width: 100% !important;
-    text-align: center; }
-  .container-img {
-    width: 95%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    grid-template-rows: 200px; }
-  .container-img .box-img:nth-child(1) {
-    grid-column-start: span 1; }
-  .container-img .box-img:nth-child(15) {
-    grid-column-start: span 1; } }
-
-@media screen and (max-width: 375px) {
-  .container-img {
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr); }
-  .container-img .box-img img {
-    height: 200px; } }
+  @media screen and (max-width: 375px) {
+    .container-img {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      display: flex;
+      flex-direction: column; } }
+  @media (max-width: 768px) {
+    .container-img {
+      width: 95%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      grid-template-rows: 200px; }
+      .container-img .box-img:nth-child(1) {
+        grid-column-start: span 1; }
+      .container-img .box-img:nth-child(4) {
+        grid-column-start: span 1; }
+      .container-img .box-img:nth-child(15) {
+        grid-column-start: span 1; } }
 
 /* -------- CARTEL EXTEND ------- */
-.galeriaa, .usoss, .cuidadoss, .nosotross {
+.galeriaa, .cuidadoss, .usoss, .nosotross {
   padding: 15px;
   font-size: 1.2em;
   font-weight: normal;
@@ -164,10 +156,9 @@ body {
   max-width: 500px;
   margin-bottom: 50px;
   margin-top: 30px; }
-
-.img-fluid {
-  max-width: 200px;
-  margin-top: 10px; }
+  #contenedor-formulario #titulo-formulario .img-fluid {
+    max-width: 200px;
+    margin-top: 10px; }
 
 footer {
   background-color: #6a784f;
